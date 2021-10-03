@@ -77,6 +77,7 @@ permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
   trailing_html: true # Set to false to remove trailing '.html' from permalinks
+theme: aurora
 ```
 
 ---
@@ -87,7 +88,7 @@ pretty_urls:
 
 - 把 `highlight` 的启用改为`false`
 - 把 `prismjs` 的启用改为`true`
-- 把 `prismjs` 下的 `preprocess` 改为 `false`
+- 把 `prismjs` 下的 `preprocess` 改为 `true`
 
 ```yaml:no-line-numbers{2,9}
 highlight:
@@ -113,7 +114,7 @@ prismjs:
 要创建这个默认的 about 页，只需要执行这个 `Hexo 的命令`：
 
 ```shell:no-line-numbers
-hexo create page about
+hexo new page about
 ```
 
 执行完毕后，你会发现在 `source/` 文件中多处了一个新的文件夹：
